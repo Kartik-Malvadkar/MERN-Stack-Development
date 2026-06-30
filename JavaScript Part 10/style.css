@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    background-color: antiquewhite;
+}
+div
+{
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    margin: 100px;
+}
