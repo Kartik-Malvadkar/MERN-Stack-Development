@@ -1,0 +1,20 @@
+//Basics
+
+ls => list files
+pwd => print working directory
+clear => clear screen
+
+//Navigation
+
+cd - change directory
+cd Desktop
+cd.. => Back Button
+
+//Path
+
+cd / = root directory
+cd ~ = home directory
+
+//Making directories
+
+mkdir => make directory
