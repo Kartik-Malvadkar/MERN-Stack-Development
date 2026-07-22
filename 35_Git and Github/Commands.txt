@@ -1,0 +1,50 @@
+// Configuring Git
+
+git config --global user.name "My name"
+git config --global user.email "someone@gmail.com"
+
+//To clone
+
+git clone <-some link->
+
+//To chech Status
+
+git stauts
+
+//To add
+
+git add.  OR  git add <-file name->
+git commit -m "some message"
+git push origin main
+
+//To init
+
+git init
+git remote add origin <-link->
+git remote -v //To verify remote
+git branch  //To check branch
+git branch -m main //To rename branch
+git push origin main
+
+//Git Branch commands
+
+git branch //To chech branch
+git branch -M main //To rename branch
+git checkout <-branch name-> //To navigate
+git checkout -b <-new branch name-> //To create new branch
+git branch -d <-branch name-> //To delete branch
+
+//Merging code
+
+git diff <-branch name-> //To compare commits, branches, files & more
+git merge <-branch name-> //To merge 2 branches
+
+//Fixing Mistakes
+
+git reset <-file name->
+git reset
+
+git reset HEAD~1
+
+git reset <-commit hash->
+git reset --hard <-commit hash->
