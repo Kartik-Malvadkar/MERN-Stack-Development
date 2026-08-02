@@ -1,0 +1,57 @@
+//Database Queries
+
+CREATE DATABASE db_name;
+CREATE DATABASE IF NOT EXISTS db_name;
+
+DROP DATABASE db_name;
+DROP DATABASE IF EXISTS db_name;
+
+SHOW DATAfBASES;
+SHOW TABLES;
+
+//Constraints
+
+NOT NULL //Columns cannot have a null value
+UNIQUE //All values in column are different
+DEFAULT //Sets the default value of a column
+CHECK //It can limit the values allowed in column
+PRIMARY KEY //Makes a column unique & not null bull used only for one
+FOREIGN KEY //Prevent actions that would destroy links between tables
+
+//Table Queries
+
+Create Table
+
+CREATE TABLES table_name(
+    column_name1 datatype constraint,
+    column_name2 datatype constraint
+);
+
+salary INT DEFAULT 25000;
+
+CONSTRAINT age_check CHECK (age >=18 AND city ="Delhi")
+
+CREATE TABLE temp(
+    id int not null,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE temp(
+    cust_id int,
+    FOREIGN KEY (cust_id) references
+    customer(id)
+);
+
+//Insert
+
+INSERT INTO table_name
+(column_name1, column_name2)
+VALUE
+(col1_v1, col2_v1),
+(col1_2, col2_v2);
+
+//Select
+
+SELECT col1, col2 FROM table_name;
+
+SELECT * FROM table_name;
