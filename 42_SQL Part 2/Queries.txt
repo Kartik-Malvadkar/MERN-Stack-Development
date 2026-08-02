@@ -1,0 +1,95 @@
+// Where Clause
+
+SELECT col1, col2 FROM table_name
+WHERE conditions;
+
+//Operators
+
+AND (to check for both condition to be true)
+OR (to check for one of the condition to be true)
+BETWEEN (select for a given range)
+IN (matches any value in the list)
+NOT (to negate the give condition)
+
+//Limit Clause
+
+SELECT col1, col2, FROM table_name
+LIMIT number;
+
+//Order by Clause
+(ASC) (DESC)
+
+SELECT col1, col2 FROM table_name
+ORDER BY col_name(s) ASC;
+
+//Aggregate Functions
+
+COUNT()
+MAX()
+MIN()
+SUM()
+AVG()
+
+SELECT MAX(marks)
+FROM student;
+
+//Group by Clause
+
+SELECT col1, col2
+FROM table_name
+GROUP BY  col_name(s);
+
+*Generally we use grooup by with some aggregation function
+
+//Having Clause
+
+SELECT col1, col2
+FROM table_name
+GROUP BY col_name(s)
+HAVING condition;
+
+//General Order
+
+SELECT column(s)
+FROM table_name
+WHERE condition
+GROUP BY column(s)
+HAVING condition    
+ORDER BY column(s) ASC;
+
+//Update 
+
+UPDATE table_name
+SET col1= val1, col2 = val2
+WHERE condition;
+
+//Delete
+
+DELETE FROM table_name
+WHERE condition;
+
+//Alter
+
+ADD column
+ALTER TABLE table_name
+ADD COLUMN col_name datatype constraint;
+
+DROP column
+ALTER TABLE table_name
+DRIP COLUMN column_name;
+
+RENAME Table
+ALTER TABLE table_name
+RENAME TO new_table_name;
+
+CHANGE Column 
+ALTER TABLE table_name
+CHANGE COLUMN old_name new_name new_datatype new_constraint;
+
+MODIFY Column 
+ALTER TABLE table_name
+MODIFY col_name new_datatype new_constraint;
+
+//Truncate
+
+TRUNCATE TABLE table_name
